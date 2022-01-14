@@ -1,0 +1,29 @@
+ *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    background-color: #060329;
+    color: #37d0ff;
+    height: 70px;;
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 20px;
+    justify-content: center;
+}
+
+.Form{
+    display: flexbox;
+    height: 100px;
+    width: 400px;
+    padding: 20px;
+    margin: 20px;
+
+}
+canvas{
+    border: 2px solid red;
+    margin: 20px;
+}

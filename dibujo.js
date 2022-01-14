@@ -3,10 +3,8 @@ var boton = document.getElementById("botoncito");
 var box = document.getElementById("dibujito");
 var colorSelect = document.getElementById("btnColor");
 var colorLineas = document.getElementById("colorLineas");
-boton.addEventListener("click", dibujoPorClic);
-console.log(colorLineas);
 
-console.log(colorSelect);
+boton.addEventListener("click", dibujoPorClic);
 
 var lienzo = box.getContext("2d"); // Método de Canvas que obtiene el área donde se va a dibujar.
 var ancho = box.width;

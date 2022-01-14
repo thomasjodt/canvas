@@ -5,23 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dibujando con Canvas</title>
-    <style>
-        h1, p{ font-family: "Arial";}
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1>Dibujo con Canvas</h1>
-    <div class="">
+    <div class="Form">
+        <p>¿Qué color deseas?</p>
+        <input type="color"  id="colorLineas"/>
+    </div>
+    <div class="Form">
         <p>¿Cuántas líneas quieres?</p>
         <input type="text" placeholder="Ingresa la Cantidad." id="texto_lineas"/>
         <input type="button" value="A Darle!" id="botoncito">
     </div>
-    <div class="">
-        <p>¿Qué color deseas?</p>
-        <input type="color"  id="colorLineas"/>
-    </div>
 
-    <canvas width="800" height="800" id="dibujito"></canvas>
+    <canvas width="400" height="400" id="dibujito"></canvas>
     <p>Así queda tu dibujo</p>
     <script src="dibujo.js"></script>
 </body>
