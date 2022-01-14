@@ -1,7 +1,12 @@
 var texto = document.getElementById("texto_lineas");
 var boton = document.getElementById("botoncito");
 var box = document.getElementById("dibujito");
+var colorSelect = document.getElementById("btnColor");
+var colorLineas = document.getElementById("colorLineas");
 boton.addEventListener("click", dibujoPorClic);
+console.log(colorLineas);
+
+console.log(colorSelect);
 
 var lienzo = box.getContext("2d"); // Método de Canvas que obtiene el área donde se va a dibujar.
 var ancho = box.width;
@@ -16,7 +21,7 @@ function dibujarLinea(color, x0, y0, x1, y1){   //Trazar Líneas.
     }
 
 function dibujoPorClic(){
-    var colorP = "#2A7C7E";
+    var colorP = colorLineas.value;
     var lineas = parseInt(texto.value);
     var xi, xf, yi, yf;
     var espacio = ancho / lineas;
